@@ -157,14 +157,15 @@
 }
 
 .typing-demo {
-  display: inline-block; /* Adicionado para ajustar a largura ao conteúdo */
-  animation: typing 2s steps(12), blink 0.5s step-end infinite alternate;
+  width: 12ch;
+  animation: typing 2s steps(12), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
 }
+
 
 @media (max-width: 600px) {
   .typing-demo {
