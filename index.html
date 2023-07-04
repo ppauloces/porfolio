@@ -18,6 +18,7 @@
   href="https://fonts.googleapis.com/css?family=Quicksand:700|Roboto:400,400i,700,300&display=swap"
   rel="stylesheet"
   />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- FontAwesome JS-->
   <script defer src="assets/fontawesome/js/all.min.js"></script>
@@ -49,10 +50,10 @@
             <h1 class="headline mb-3">
               <span style="font-weight: 300; font-size: 15px"
               >- Meu nome é:</span
-              ><br />Paulo Amaral
+              ><br /><div class="typing-demo">Paulo Amaral</div>
             </h1>
             <!--//headline-->
-            <div class="subheadline mb-4">
+            <div class="subheadline mb-4" data-aos="fade-up">
               <p class="text-justify">
                 Olá, sou um desenvolvedor fullstack apaixonado por criar
                 projetos web impactantes. Minhas principais habilidades
@@ -63,7 +64,7 @@
             </div>
             <!--//subheading-->
 
-            <div class="cta-holder row gx-md-3 gy-3 gy-md-0 justify-content-center text-center">
+            <div class="cta-holder row gx-md-3 gy-3 gy-md-0 justify-content-center text-center" data-aos="fade-up-right">
               <div class="card1">
                 <a href="https://www.instagram.com/ppauloces/" target="_blank" class="socialContainer containerOne">
                   <svg class="socialSvg instagramSvg" viewBox="0 0 16 16">
@@ -104,7 +105,7 @@
           <!--//promo-->
         </div>
         <!--col-->
-        <div class="col-12 col-md-5 mb-5 align-self-center">
+        <div class="col-12 col-md-5 mb-5 align-self-center" data-aos="fade-left">
           <div class="book-cover-holder">
             <img
             class="img-fluid book-cover"
@@ -127,15 +128,17 @@
   class="benefits-section theme-bg-light-gradient py-5"
   >
   <div class="container py-5">
-    <h2 class="section-heading text-center mb-3">Serviços</h2>
-    <div class="section-intro single-col-max mx-auto text-center mb-5">
-      Veja abaixo os serviços especializados que ofereço, dedicados a
-      fornecer soluções personalizadas e impactantes para atender às suas
-      necessidades.
+    <div data-aos="fade-right">
+      <h2 class="section-heading text-center mb-3">Serviços</h2>
+      <div class="section-intro single-col-max mx-auto text-center mb-5">
+        Veja abaixo os serviços especializados que ofereço, dedicados a
+        fornecer soluções personalizadas e impactantes para atender às suas
+        necessidades.
+      </div>
     </div>
     <div class="row text-center">
       <div class="item col-12 col-md-6 col-lg-4">
-        <div class="item-inner p-3 p-lg-4">
+        <div class="item-inner p-3 p-lg-4" data-aos="fade-right">
           <div class="item-header mb-3">
             <div class="item-icon" style="color: #B968C7;"><i class="fas fa-laptop-code"></i></div>
             <h3 class="item-heading">Desenvolvimento web personalizado</h3>
@@ -150,7 +153,7 @@
         <!--//item-inner-->
       </div>
       <!--//item-->
-      <div class="item col-12 col-md-6 col-lg-4">
+      <div class="item col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
         <div class="item-inner p-3 p-lg-4">
           <div class="item-header mb-3">
             <div class="item-icon" style="color: #B968C7;">
@@ -169,7 +172,7 @@
         <!--//item-inner-->
       </div>
       <!--//item-->
-      <div class="item col-12 col-md-6 col-lg-4">
+      <div class="item col-12 col-md-6 col-lg-4" data-aos="fade-left">
         <div class="item-inner p-3 p-lg-4">
           <div class="item-header mb-3">
             <div class="item-icon" style="color: #B968C7;">
@@ -188,7 +191,7 @@
         <!--//item-inner-->
       </div>
       <!--//item-->
-      <div class="item col-12 col-md-6 col-lg-4">
+      <div class="item col-12 col-md-6 col-lg-4" data-aos="fade-right">
         <div class="item-inner p-3 p-lg-4">
           <div class="item-header mb-3">
             <div class="item-icon" style="color: #B968C7;"><i class="fa-solid fa-store"></i></div>
@@ -205,7 +208,7 @@
         <!--//item-inner-->
       </div>
       <!--//item-->
-      <div class="item col-12 col-md-6 col-lg-4">
+      <div class="item col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
         <div class="item-inner p-3 p-lg-4">
           <div class="item-header mb-3">
             <div class="item-icon" style="color: #B968C7;"><i class="fa-brands fa-google"></i></div>
@@ -222,7 +225,7 @@
         <!--//item-inner-->
       </div>
       <!--//item-->
-      <div class="item col-12 col-md-6 col-lg-4">
+      <div class="item col-12 col-md-6 col-lg-4" data-aos="fade-left">
         <div class="item-inner p-3 p-lg-4">
           <div class="item-header mb-3">
             <div class="item-icon" style="color: #B968C7;">
@@ -245,7 +248,7 @@
       <!--//item-->
     </div>
     <!--//row-->
-    <div class="cta-holder align-self-center row justify-content-center">
+    <div class="cta-holder align-self-center row justify-content-center" data-aos="zoom-in-up">
       <div class="col-12 col-md-auto">
         <a 
         class="btn btn-primary botao-saiba-mais w-100"
@@ -272,7 +275,7 @@ aria-hidden="true"
 >
 <div class="modal-dialog modal-dialog-centered">
   <div class="modal-content">
-    <form>
+    <form method="POST" name="formcontato" id="contato" autocomplete="off">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="staticBackdropLabel">
           Informações
@@ -308,7 +311,7 @@ aria-hidden="true"
           </label>
         </div>
         <div class="wave-group mb-3">
-          <input required="" type="text" name="telefone" class="input">
+          <input type="text" name="telefone" class="input">
           <span class="bar"></span>
           <label class="label">
             <span class="label-char" style="--index: 0">T</span>
@@ -342,16 +345,20 @@ aria-hidden="true"
         >
         FECHAR
       </button>
-      <button type="button" class="btn btn-primary">ENVIAR</button>
+      <button type="submit" class="btn btn-primary" id="btnContato">
+        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+        <span class="btn-text">ENVIAR</span>
+      </button>
+
     </div>
   </form>
 </div>
 </div>
 </div>
 
-<section id="content-section" class="content-section">
+<section id="content-section" class="content-section" >
   <div class="container">
-    <div class="single-col-max mx-auto">
+    <div class="single-col-max mx-auto" data-aos="fade-right">
       <h2 class="section-heading text-center mb-5">Projetos</h2>
       <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
@@ -363,101 +370,101 @@ aria-hidden="true"
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <a href="https://masteroficios.com.br" target="_blank"><img src="assets/images/projetos/masteroficios.webp" class="d-block w-100" alt="masteroficios page">
-            <div class="carousel-caption d-none d-md-block"></a>
-              <h5 class="text-white fw-bold">MasterOfícios</h5>
-              <p class="text-white">Sistema de automação de ofícios (PHP, MYSQL, JQUERY)</p>
-              <a href="https://masteroficios.com.br" class="text-white" target="_blank">Acesse aqui</a>
+              <div class="carousel-caption d-none d-md-block"></a>
+                <h5 class="text-white fw-bold">MasterOfícios</h5>
+                <p class="text-white">Sistema de automação de ofícios (PHP, MYSQL, JQUERY)</p>
+                <a href="https://masteroficios.com.br" class="text-white" target="_blank">Acesse aqui</a>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <a href="https://ppauloces.github.io/sequencia-numerica/" target="_blank"><img src="assets/images/projetos/sequencia-numerica.webp" class="d-block w-100" alt="sequencia numerica page"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sequência numérica</h5>
+                <p>Jogo lógico (HTML, CSS, JQUERY)</p>
+                <a href="https://ppauloces.github.io/sequencia-numerica/" class="text-black" target="_blank">Acesse aqui</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="https://ppauloces.github.io/spotify-clone/" target="_blank"><img src="assets/images/projetos/spotify.webp" class="d-block w-100" alt="spotify clone page"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-white">Spotify</h5>
+                <p class="text-white">Clone do Spotify (HTML, CSS)</p>
+                <a href="https://ppauloces.github.io/spotify-clone/" class="text-white" target="_blank">Acesse aqui</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="https://ppauloces.github.io/spotify-clone/" target="_blank"><img src="assets/images/projetos/evapotranspiracao.webp" class="d-block w-100" alt="spotify clone page"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-white">Cálculo de evapotranspiração pelo método de Thornthwaite</h5>
+                <p class="text-white">(Python)</p>
+              </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <a href="https://ppauloces.github.io/sequencia-numerica/" target="_blank"><img src="assets/images/projetos/sequencia-numerica.webp" class="d-block w-100" alt="sequencia numerica page"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Sequência numérica</h5>
-              <p>Jogo lógico (HTML, CSS, JQUERY)</p>
-              <a href="https://ppauloces.github.io/sequencia-numerica/" class="text-black" target="_blank">Acesse aqui</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="https://ppauloces.github.io/spotify-clone/" target="_blank"><img src="assets/images/projetos/spotify.webp" class="d-block w-100" alt="spotify clone page"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-white">Spotify</h5>
-              <p class="text-white">Clone do Spotify (HTML, CSS)</p>
-              <a href="https://ppauloces.github.io/spotify-clone/" class="text-white" target="_blank">Acesse aqui</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="https://ppauloces.github.io/spotify-clone/" target="_blank"><img src="assets/images/projetos/evapotranspiracao.webp" class="d-block w-100" alt="spotify clone page"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-white">Cálculo de evapotranspiração pelo método de Thornthwaite</h5>
-              <p class="text-white">(Python)</p>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+      <!--//single-col-max-->
     </div>
-    <!--//single-col-max-->
-  </div>
-  <!--//container-->
-</section>
-<!--//content-section-->
+    <!--//container-->
+  </section>
+  <!--//content-section-->
 
-<section id="audience-section" class="audience-section py-5">
-  <div class="container">
-    <h2 class="section-heading text-center mb-4">Experiências</h2>
-    <!--//section-intro-->
-    <div class="audience mx-auto">
-      <div class="item row gx-3">
-        <div class="col-auto item-icon">
-          <i class="fa-solid fa-code fa-2xl"></i>
-        </div>
-        <div class="col">
-          <h4 class="item-title">Técnico em Informática</h4>
-          <div class="item-desc">
-            IFBA - Campus Eunápolis (2019 - 2023)
+  <section id="audience-section" class="audience-section py-5">
+    <div class="container" data-aos="fade-right">
+      <h2 class="section-heading text-center mb-4">Experiências</h2>
+      <!--//section-intro-->
+      <div class="audience mx-auto">
+        <div class="item row gx-3" data-aos="fade-right">
+          <div class="col-auto item-icon">
+            <i class="fa-solid fa-code fa-2xl"></i>
           </div>
-        </div>
-        <!--//col-->
-      </div>
-      <!--//item-->
-      <div class="item row gx-3">
-        <div class="col-auto item-icon">
-          <i class="fa-brands fa-php fa-2xl"></i>
-        </div>
-        <div class="col">
-          <h4 class="item-title">Desenvolvedor PHP</h4>
-          <div class="item-desc">
-            TITAN SOFTWARE (abr 2022 - ago 2022)
+          <div class="col">
+            <h4 class="item-title">Técnico em Informática</h4>
+            <div class="item-desc">
+              IFBA - Campus Eunápolis (2019 - 2023)
+            </div>
           </div>
+          <!--//col-->
         </div>
-        <!--//col-->
-      </div>
-      <!--//item-->
-      <div class="item row gx-3">
-        <div class="col-auto item-icon">
-          <i class="fa-brands fa-php fa-2xl"></i>
-        </div>
-        <div class="col">
-          <h4 class="item-title">Desenvolvedor PHP</h4>
-          <div class="item-desc">
-            DR WATSON SISTEMAS LTDA. (Current)
+        <!--//item-->
+        <div class="item row gx-3" data-aos="fade-right">
+          <div class="col-auto item-icon">
+            <i class="fa-brands fa-php fa-2xl"></i>
           </div>
+          <div class="col">
+            <h4 class="item-title">Desenvolvedor PHP</h4>
+            <div class="item-desc">
+              TITAN SOFTWARE (abr 2022 - ago 2022)
+            </div>
+          </div>
+          <!--//col-->
         </div>
-        <!--//col-->
+        <!--//item-->
+        <div class="item row gx-3" data-aos="fade-right">
+          <div class="col-auto item-icon">
+            <i class="fa-brands fa-php fa-2xl"></i>
+          </div>
+          <div class="col">
+            <h4 class="item-title">Desenvolvedor PHP</h4>
+            <div class="item-desc">
+              DR WATSON SISTEMAS LTDA. (Current)
+            </div>
+          </div>
+          <!--//col-->
+        </div>
       </div>
+      <!--//audience-->
     </div>
-    <!--//audience-->
-  </div>
-  <!--//container-->
-</section>
-<!--//audience-section-->
+    <!--//container-->
+  </section>
+  <!--//audience-section-->
 
 <!--
 <section id="form-section" class="form-section">
@@ -501,7 +508,7 @@ aria-hidden="true"
 <section
 id="author-section"
 class="author-section section py-5"
- style="background-color: #B968C7;">
+style="background-color: #B968C7;">
 <div class="container py-3">
   <div class="author-profile text-center mb-5">
     <img
@@ -517,35 +524,35 @@ class="author-section section py-5"
   <div class="author-bio single-col-max mx-auto">
     <p>
      blablabla vou consertar a imagem ainda Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada vulputate imperdiet. Vestibulum vel dui pharetra, egestas ipsum non, condimentum elit. Nunc accumsan nisl id tempor finibus. Sed dapibus fringilla sodales. Proin mattis fermentum velit, non aliquam nulla. Vivamus sed augue tellus. Cras venenatis laoreet mi, eu tempus eros. Nunc justo enim, feugiat eu accumsan a, tincidunt sed augue. Etiam ac sapien eget ex ultricies maximus. Aliquam sapien massa, semper eget suscipit a, euismod interdum ex. 
-    </p>
-    <div class="author-links text-center pt-4">
-      <h5 class="text-white mb-4">Siga-me</h5>
-      <ul class="social-list list-unstyled">
-        <li class="list-inline-item">
-          <a target="_blank" href="https://twitter.com/ppaulodev"
-          ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-        <li class="list-inline-item">
-          <a target="_blank" href="https://github.com/ppauloces"
-          ><i class="fab fa-github-alt"></i
-          ></a>
-        </li>
-        <li class="list-inline-item">
-          <a target="_blank" href="https://instagram.com/ppauloces"
-          ><i class="fa-brands fa-instagram"></i></a>
-        </li>
-      </ul>
-      <!--//social-list-->
-    </div>
-    <!--//author-links-->
+   </p>
+   <div class="author-links text-center pt-4">
+    <h5 class="text-white mb-4">Siga-me</h5>
+    <ul class="social-list list-unstyled">
+      <li class="list-inline-item">
+        <a target="_blank" href="https://twitter.com/ppaulodev"
+        ><i class="fab fa-twitter"></i
+        ></a>
+      </li>
+      <li class="list-inline-item">
+        <a target="_blank" href="https://github.com/ppauloces"
+        ><i class="fab fa-github-alt"></i
+        ></a>
+      </li>
+      <li class="list-inline-item">
+        <a target="_blank" href="https://instagram.com/ppauloces"
+        ><i class="fa-brands fa-instagram"></i></a>
+      </li>
+    </ul>
+    <!--//social-list-->
   </div>
-  <!--//author-bio-->
+  <!--//author-links-->
+</div>
+<!--//author-bio-->
 </div>
 <!--//container-->
 </section>
 <!--//author-section-->
-
+<div id="linkResultado"></div>
 <footer class="footer">
   <div class="footer-bottom text-center py-5">
     <small class="copyright"
@@ -555,9 +562,15 @@ class="author-section section py-5"
 </footer>
 
 <!-- Javascript -->
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 <script src="assets/plugins/popper.min.js"></script>
 <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/plugins/smoothscroll.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+<script>
+
+</script>
