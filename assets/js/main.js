@@ -23,4 +23,4 @@ pageNavLinks.forEach((pageNavLink) => {
 	
 });
 
-  AOS.init();
+  
