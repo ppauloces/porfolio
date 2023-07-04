@@ -24,26 +24,3 @@ pageNavLinks.forEach((pageNavLink) => {
 });
 
   AOS.init();
-
-  jQuery('#contato').submit(function () {
-    event.preventDefault();
-    var dados = jQuery(this).serialize();
-    $("#btnContato").prop("disabled", true);
-  $(".spinner-border").removeClass("d-none"); // Mostrar o spinner
-  $(".btn-text").addClass("d-none"); // Ocultar o texto do botão
-
-  jQuery.ajax({
-    type: "POST",
-    url: "private/functions/email.php",
-    data: dados,
-    success: function (data) {
-      $("#linkResultado").html(data);
-      setTimeout(function () {
-        $("#btnContato").prop("disabled", false);
-        $(".spinner-border").addClass("d-none"); // Ocultar o spinner
-        $(".btn-text").removeClass("d-none"); // Mostrar o texto do botão
-      }, 2500);
-    }
-  });
-  return false;
-});
